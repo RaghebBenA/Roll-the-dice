@@ -1,33 +1,34 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.Dices{
+  width: 70%;
+  height: 350px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  animation: mov 0.9s ease-in-out infinite ;
+  transform-style: preserve-3d;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes mov{
+ from{
+   align-items: flex-start
+ }
+ to{
+   align-items: flex-end
+ }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cont{
+  width: 70%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start
 }
